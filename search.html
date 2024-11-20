@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Bar</title>
+</head>
+<body>
+  <input type="text" id="search" placeholder="Search">
+  <button onclick="searchFunction()">Search</button>
+  <script>
+    function searchFunction() {
+      var input = document.getElementById("search").value;
+      if (input.includes("Soft Skills")) {
+        // Search logic goes here.
+        alert("Search includes Soft Skills");
+      } else {
+        alert("Search does not include Soft Skills");
+      }
+    }
+  </script>
+</body>
+</html>

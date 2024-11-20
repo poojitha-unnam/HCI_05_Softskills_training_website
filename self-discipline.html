@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Discipline Course</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Self-Discipline Course</h1>
+    <p>Learn the art of self-discipline to achieve your goals and lead a more focused life.</p>
+</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+
+<div class="container">
+    <div class="course">
+        <img src="selfdiscip.avif" alt="Self-Discipline Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Self-discipline is the ability to control one's emotions, behavior, and desires in the face of external demands, to achieve personal or professional goals. This course will help you develop self-discipline skills that are crucial for maintaining focus, achieving long-term goals, and improving overall productivity.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Understanding Self-Discipline</strong><br>
+            Learn the fundamentals of self-discipline and its importance in personal and professional success.
+        </p>
+        <p>
+            <strong>2. Setting Clear Goals</strong><br>
+            Discover how to set clear and achievable goals that align with your values and aspirations.
+        </p>
+        <p>
+            <strong>3. Developing Self-Control</strong><br>
+            Explore techniques to improve self-control and resist temptations that hinder your progress.
+        </p>
+        <p>
+            <strong>4. Building Healthy Habits</strong><br>
+            Understand the process of forming and maintaining healthy habits that support self-discipline.
+        </p>
+        <p>
+            <strong>5. Time Management</strong><br>
+            Learn effective time management strategies to prioritize tasks and avoid procrastination.
+        </p>
+        <p>
+            <strong>6. Overcoming Obstacles</strong><br>
+            Identify common obstacles to self-discipline and learn strategies to overcome them.
+        </p>
+        <p>
+            <strong>7. Staying Motivated</strong><br>
+            Discover ways to stay motivated and committed to your goals, even during challenging times.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Self-Discipline course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

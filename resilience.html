@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilience Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 70%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Resilience Course</h1>
+    <p>Learn how to build resilience and thrive in the face of challenges through effective strategies and techniques.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="resilience.jpg" alt="Resilience Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Resilience is the ability to adapt and bounce back from adversity and challenges. This course covers essential techniques and strategies to help you build resilience, enabling you to thrive in both personal and professional settings.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Resilience</strong><br>
+            Understand the importance of resilience and how it can positively impact your personal and professional life.
+        </p>
+        <p>
+            <strong>2. Developing a Growth Mindset</strong><br>
+            Learn how to cultivate a growth mindset to view challenges as opportunities for growth and development.
+        </p>
+        <p>
+            <strong>3. Building Emotional Strength</strong><br>
+            Discover techniques to enhance your emotional strength and regulate your emotions effectively.
+        </p>
+        <p>
+            <strong>4. Managing Stress and Anxiety</strong><br>
+            Explore strategies to manage stress and anxiety, and develop a calm and focused mind.
+        </p>
+        <p>
+            <strong>5. Strengthening Relationships</strong><br>
+            Understand the role of social support and learn how to build and maintain strong, supportive relationships.
+        </p>
+        <p>
+            <strong>6. Enhancing Physical Well-being</strong><br>
+            Learn how to improve your physical health through exercise, nutrition, and sleep to support your resilience.
+        </p>
+        <p>
+            <strong>7. Creating a Resilience Plan</strong><br>
+            Develop a personal resilience plan to guide your ongoing growth and adaptability.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Resilience course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

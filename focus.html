@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 60%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Focus Course</h1>
+    <p>Enhance your ability to concentrate and achieve your goals through effective focus strategies and techniques.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="focus.webp" alt="Focus Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Focus is the ability to concentrate on a task or goal without getting distracted. This course covers essential techniques and strategies to help you improve your focus, enabling you to achieve your goals more efficiently and effectively.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Focus</strong><br>
+            Understand the importance of focus and how it can positively impact your personal and professional life.
+        </p>
+        <p>
+            <strong>2. Techniques for Enhancing Focus</strong><br>
+            Learn various techniques to improve your focus, including mindfulness, meditation, and time management.
+        </p>
+        <p>
+            <strong>3. Setting Clear Priorities</strong><br>
+            Discover how to set clear priorities that align with your values and goals to maintain focus.
+        </p>
+        <p>
+            <strong>4. Minimizing Distractions</strong><br>
+            Explore strategies to minimize distractions and create an environment conducive to focus.
+        </p>
+        <p>
+            <strong>5. Developing a Focused Mindset</strong><br>
+            Learn techniques to cultivate a focused mindset and maintain concentration on your tasks.
+        </p>
+        <p>
+            <strong>6. Practical Applications of Focus</strong><br>
+            Understand how to apply focus techniques in various aspects of your life, including work, study, and personal projects.
+        </p>
+        <p>
+            <strong>7. Creating a Focus Routine</strong><br>
+            Develop a consistent focus routine to support your ongoing personal and professional growth.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Focus course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Thinking Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: 500px;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Strategic Thinking Course</h1>
+    <p>Develop your ability to think strategically and plan effectively with our comprehensive strategic thinking course.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="strategic thinking.png" alt="Strategic Thinking Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Strategic thinking is the process of planning and managing resources to achieve specific goals. This course covers essential strategic thinking techniques and strategies to help you develop a long-term vision, set meaningful objectives, and create actionable plans.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Strategic Thinking</strong><br>
+            Understand the importance of strategic thinking and how it can positively impact your personal and professional life.
+        </p>
+        <p>
+            <strong>2. Goal Setting and Planning</strong><br>
+            Learn how to set clear, achievable goals and create effective plans to reach them.
+        </p>
+        <p>
+            <strong>3. Analyzing Strengths and Weaknesses</strong><br>
+            Discover techniques for analyzing your strengths and weaknesses, as well as opportunities and threats, to make informed decisions.
+        </p>
+        <p>
+            <strong>4. Developing a Strategic Mindset</strong><br>
+            Explore strategies for cultivating a strategic mindset, including critical thinking, creativity, and adaptability.
+        </p>
+        <p>
+            <strong>5. Implementing Strategic Plans</strong><br>
+            Learn how to implement your strategic plans effectively, manage resources, and monitor progress.
+        </p>
+        <p>
+            <strong>6. Overcoming Challenges</strong><br>
+            Understand common challenges in strategic thinking and how to overcome them to achieve your goals.
+        </p>
+        <p>
+            <strong>7. Continuous Improvement</strong><br>
+            Develop a mindset of continuous improvement to adapt and refine your strategies over time.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Strategic Thinking course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

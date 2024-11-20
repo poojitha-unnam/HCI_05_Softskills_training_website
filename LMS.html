@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Skills LMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li a i {
+            margin-right: 8px;
+        }
+
+        header nav ul li a:hover {
+            color: #d4f8e8;
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .course h3 {
+            margin-top: 0;
+        }
+
+        .course button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .course button:hover {
+            background-color: #45a049;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <header>
+        <h1>Soft Skills Learning Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
+                <li><a href="courses.html"><i class="fas fa-book icon"></i>Courses</a></li>
+                <li><a href="LMS.html"><i class="fas fa-laptop icon"></i>LMS</a></li>
+                <li><a href="pricing.html"><i class="fas fa-tags icon"></i>Pricing</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon"></i>About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope icon"></i>Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course">
+                <h3>Empathy</h3>
+                <p>Empathy is the ability to understand and share the feelings of others.</p>
+                <button onclick="window.location.href='Empathy.html'">Join now</button>
+            </div>
+            <div class="course">
+                <h3>Emotional Intelligence</h3>
+                <p>Emotional Intelligence (EI) refers to the ability to identify, understand, and manage one's own emotions, as well as the emotions of others.</p>
+                <button onclick="window.location.href='payment.html'">Enroll Now</button>
+            </div>
+            <div class="course">
+                <h3>Conflict resolution</h3>
+                <p>Conflict resolution is the process of resolving a dispute or a conflict by meeting at least some of each side’s needs and addressing their interests. This course will help you develop the skills needed to manage and resolve conflicts effectively, whether in the workplace, at home, or in other settings.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Negotiation</h3>
+                <p>Negotiation is a critical skill that involves discussing and reaching agreements between parties with different interests. This course will help you develop the strategies and techniques needed to negotiate effectively, ensuring mutually beneficial outcomes. By mastering negotiation, you can enhance your personal and professional relationships, build stronger partnerships, and achieve your goals more efficiently.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Positive attitude</h3>
+                <p>A positive attitude is a mindset that focuses on the good aspects of any situation. It empowers individuals to handle stress, overcome challenges, and achieve success. This course aims to help you cultivate a positive attitude, improve your mental health, and build stronger relationships.</p>
+                <button onclick="window.location.href='positive attitude.html'">Join now</button>
+            </div>
+            <div class="course">
+                <h3>Teamwork</h3>
+                <p>Teamwork is essential for the success of any project in the workplace</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Collaboration</h3>
+                <p>Collaboration is the process of working together to achieve a common goal. Effective collaboration skills are essential in today's team-oriented work environments. This course will help you develop the skills needed to collaborate effectively with others, enhance your teamwork, and achieve better outcomes.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Leadership</h3>
+                <p>Leadership is the ability to inspire, influence, and guide others towards achieving common goals. This course aims to help you develop essential leadership skills that are crucial in both personal and professional settings. By the end of this course, you will have a better understanding of what it takes to be an effective leader and how to apply these skills in various scenarios.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Self-Reflection</h3>
+                <p>Self-reflection is the process of taking the time to think about and reflect on your thoughts, emotions, and behaviors. This course covers essential self-reflection techniques and strategies to help you gain a deeper understanding of yourself and improve your personal growth.</p>
+                <button onclick="window.location.href='self reflection.html'">Join now</button>
+            </div>
+            <div class="course">
+                <h3>Meditation</h3>
+                <p>Meditation is a practice in which an individual uses a technique to train attention and awareness and detach from reflexive, "discursive thinking," achieving a mentally clear and emotionally calm and stable state, while not judging the meditation process itself.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Self-Expression</h3>
+                <p>Self-expression is the process of conveying your thoughts, feelings, and ideas to others. This course covers essential self-expression techniques and strategies to help you articulate your emotions and ideas effectively, enabling you to connect with others and express your true self.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3> Self-Confidence</h3>
+                <p> Self-confidence is the belief in your own abilities and judgment. This course covers essential techniques and strategies to help you build and maintain self-confidence, enabling you to achieve your goals and live a fulfilling life.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Visualization</h3>
+                <p>Enhance your personal and professional growth through the power of visualization techniques.</p>
+                <button onclick="window.location.href='Visualization.html'">Join now</button>
+            </div>
+            <div class="course">
+                <h3>Resilience</h3>
+                <p>Learn how to build resilience and thrive in the face of challenges through effective strategies and techniques.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Focus</h3>
+                <p>Enhance your ability to concentrate and achieve your goals through effective focus strategies and techniques.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+            <div class="course">
+                <h3>Optimism</h3>
+                <p>Develop a positive outlook and improve your overall well-being through effective optimism strategies and techniques.</p>
+                <button onclick="window.location.href='payment.html'">Enroll now</button>
+            </div>
+        </section>
+        
+    </main>
+</body>

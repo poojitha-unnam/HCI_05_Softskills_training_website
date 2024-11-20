@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Programming Course</h1>
+    <p>Learn the fundamental programming skills to kickstart your journey in software development.</p>
+</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="programming.png" alt="Programming Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Programming is a critical skill in today’s tech-driven world. This course will introduce you to the basics of programming, covering various languages, concepts, and best practices that will enable you to create efficient and effective software solutions. Whether you’re a beginner or looking to refresh your skills, this course is designed to help you on your programming journey.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Programming</strong><br>
+            Learn the basics of programming and the importance of code in technology.
+        </p>
+        <p>
+            <strong>2. Understanding Programming Languages</strong><br>
+            Discover different programming languages and their unique features.
+        </p>
+        <p>
+            <strong>3. Writing Your First Program</strong><br>
+            Step-by-step guide to writing and running your first program.
+        </p>
+        <p>
+            <strong>4. Control Structures</strong><br>
+            Learn about control structures such as loops and conditionals that control the flow of a program.
+        </p>
+        <p>
+            <strong>5. Functions and Modules</strong><br>
+            Understand the importance of functions and how to organize your code into modules.
+        </p>
+        <p>
+            <strong>6. Debugging and Error Handling</strong><br>
+            Discover techniques to debug your code and handle errors effectively.
+        </p>
+        <p>
+            <strong>7. Advanced Programming Concepts</strong><br>
+            Explore advanced topics such as object-oriented programming and data structures.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 10 Weeks<br>
+            Level: Beginner to Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Programming course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

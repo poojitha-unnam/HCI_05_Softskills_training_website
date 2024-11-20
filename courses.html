@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .category {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #007BFF;
+            color: white;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #0056b3;
+        }
+
+        .sub-category ul {
+            margin-left: 20px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="lms.html">LMS</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="categories">
+        <div class="category">
+            <h2>Interpersonal Skills</h2>
+            <ul>
+                <li onclick="navigateToCourse('communication.html')">Communication</li>
+                <div class="sub-category">
+                    <ul>
+                        <li onclick="navigateToCourse('empathy.html')">Empathy</li>
+                        <li onclick="navigateToCourse('Emotional intelligence.html')">Emotional Intelligence</li>
+                        <li onclick="navigateToCourse('conflict resolution.html')">Conflict Resolution</li>
+                        <li onclick="navigateToCourse('negotiation.html')">Negotiation</li>
+                    </ul>
+                </div>
+                <ul>
+                    <li onclick="navigateToCourse('listening.html')">Listening</li>
+                    <div class="sub-category">
+                        <ul>
+                            <li onclick="navigateToCourse('positive attitude.html')">Positive attitude</li>
+                            <li onclick="navigateToCourse('Teamwork.html')">Teamwork</li>
+                            <li onclick="navigateToCourse('collabration.html')">Collaboration</li>
+                            <li onclick="navigateToCourse('leadership.html')">Leadership</li>
+                        </ul>
+                    </div>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Intrapersonal Skills</h2>
+            <ul>
+                <li onclick="navigateToCourse('self awareness.html')">Self-Awareness</li>
+                <div class="sub-category">
+                    <ul>
+                        <li onclick="navigateToCourse('self reflection.html')">Self-reflection</li>
+                        <li onclick="navigateToCourse('meditating.html')">Meditation</li>
+                        <li onclick="navigateToCourse('self expression.html')">Self-expression</li>
+                        <li onclick="navigateToCourse('self confidence.html')">Self-Confidence</li>
+                    </ul>
+                </div>
+                <li onclick="navigateToCourse('strategic thinking.html')">Strategic-thinking</li>
+                <div class="sub-category">
+                    <ul>
+                        <li onclick="navigateToCourse('visualization.html')">Visualization</li>
+                        <li onclick="navigateToCourse('resilience.html')">Resilience</li>
+                        <li onclick="navigateToCourse('focus.html')">Focus</li>
+                        <li onclick="navigateToCourse('optimism.html')">Optimism</li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="message"></div>
+
+    <script>
+        function navigateToCourse(courseUrl) {
+            window.location.href = courseUrl;
+        }
+    </script>
+</body>
+</html>

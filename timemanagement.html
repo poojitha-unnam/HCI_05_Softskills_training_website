@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Course</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Time Management Course</h1>
+    <p>Learn effective time management skills to boost your productivity and achieve your goals.</p>
+</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="timemanagement.jpg" alt="Time Management Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Time management is the process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity. This course covers essential time management techniques and strategies to help you make the most of your time.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Time Management</strong><br>
+            Understand the importance of time management and how it impacts your personal and professional life.
+        </p>
+        <p>
+            <strong>2. Setting SMART Goals</strong><br>
+            Learn how to set Specific, Measurable, Achievable, Relevant, and Time-bound goals to ensure your efforts are aligned with your objectives.
+        </p>
+        <p>
+            <strong>3. Prioritization Techniques</strong><br>
+            Discover various prioritization methods, such as the Eisenhower Matrix and ABC Analysis, to help you focus on what matters most.
+        </p>
+        <p>
+            <strong>4. Planning and Scheduling</strong><br>
+            Master the art of planning and scheduling using tools like calendars, planners, and digital apps to organize your tasks efficiently.
+        </p>
+        <p>
+            <strong>5. Avoiding Procrastination</strong><br>
+            Explore strategies to overcome procrastination and maintain a consistent workflow.
+        </p>
+        <p>
+            <strong>6. Time Management Tools</strong><br>
+            Get introduced to various time management tools and apps that can help you stay on track and manage your time effectively.
+        </p>
+        <p>
+            <strong>7. Work-Life Balance</strong><br>
+            Learn how to achieve a healthy work-life balance by managing your time effectively both at work and in your personal life.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 8 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Time Management course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

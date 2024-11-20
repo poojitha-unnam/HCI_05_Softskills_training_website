@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Leadership Course</h1>
+    <p>Develop your leadership skills to inspire, motivate, and lead your team to success.</p>
+</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="leadership.jpg" alt="Leadership Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Leadership is the ability to inspire, influence, and guide others towards achieving common goals. This course aims to help you develop essential leadership skills that are crucial in both personal and professional settings. By the end of this course, you will have a better understanding of what it takes to be an effective leader and how to apply these skills in various scenarios.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Leadership</strong><br>
+            Understand the fundamentals of leadership, different leadership styles, and the qualities that make an effective leader. Explore real-life examples of successful leaders and their impact on organizations.
+        </p>
+        <p>
+            <strong>2. Communication Skills for Leaders</strong><br>
+            Learn how to communicate effectively with your team, stakeholders, and other key players. This module covers verbal and non-verbal communication, active listening, and giving and receiving feedback.
+        </p>
+        <p>
+            <strong>3. Building and Leading Teams</strong><br>
+            Discover techniques for building cohesive and high-performing teams. Learn how to foster collaboration, delegate tasks, and manage conflicts within your team.
+        </p>
+        <p>
+            <strong>4. Decision Making and Problem Solving</strong><br>
+            Enhance your decision-making and problem-solving skills. This module will guide you through various decision-making models and problem-solving techniques to help you make informed choices and tackle challenges effectively.
+        </p>
+        <p>
+            <strong>5. Emotional Intelligence in Leadership</strong><br>
+            Understand the importance of emotional intelligence (EI) and how it impacts leadership effectiveness. Learn how to develop and apply EI to build stronger relationships, manage stress, and create a positive work environment.
+        </p>
+        <p>
+            <strong>6. Strategic Thinking and Planning</strong><br>
+            Learn how to develop and implement strategic plans that align with your organization's goals. This module covers setting clear objectives, creating action plans, and measuring progress.
+        </p>
+        <p>
+            <strong>7. Motivating and Inspiring Others</strong><br>
+            Explore strategies for motivating and inspiring your team. Learn how to recognize and reward achievements, provide support, and create a culture of continuous improvement.
+        </p>
+        <p>
+            <strong>8. Leading Through Change</strong><br>
+            Gain insights into leading your team through organizational changes and transitions. Learn how to manage resistance, communicate effectively, and ensure a smooth transition during times of change.
+        </p>
+        <p>
+            <strong>9. Developing Your Leadership Style</strong><br>
+            Reflect on your own leadership style and identify areas for improvement. This module provides tools and techniques for continuous self-development and growth as a leader.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 8 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id1" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Leadership course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

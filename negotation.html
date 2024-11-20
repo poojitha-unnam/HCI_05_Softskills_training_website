@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negotiation Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: underline;
+            color: white;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Negotiation Course</h1>
+    <p>Develop your negotiation skills to achieve win-win outcomes in both personal and professional settings.</p>
+</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="negotation.png" alt="Negotiation Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Negotiation is a critical skill that involves discussing and reaching agreements between parties with different interests. This course will help you develop the strategies and techniques needed to negotiate effectively, ensuring mutually beneficial outcomes. By mastering negotiation, you can enhance your personal and professional relationships, build stronger partnerships, and achieve your goals more efficiently.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Negotiation</strong><br>
+            In this module, you will learn the basics of negotiation, including its definition, significance, and the different types of negotiation. You'll explore real-world scenarios where negotiation plays a crucial role, helping you understand its impact on everyday life.
+        </p>
+        <p>
+            <strong>2. Preparing for Negotiation</strong><br>
+            Preparation is key to a successful negotiation. This module covers the steps to prepare thoroughly, such as identifying your goals, understanding the interests of the other party, and researching relevant information. You'll also learn how to develop a negotiation strategy and create a strong opening statement.
+        </p>
+        <p>
+            <strong>3. Communication Skills</strong><br>
+            Effective communication is at the heart of successful negotiation. This module focuses on improving your communication skills, including active listening, asking open-ended questions, and articulating your thoughts clearly. You'll also learn about non-verbal communication and how to read body language during negotiations.
+        </p>
+        <p>
+            <strong>4. Strategies and Tactics</strong><br>
+            Negotiation involves various strategies and tactics to achieve desired outcomes. This module explores different negotiation styles, such as competitive and collaborative approaches, and when to use each. You'll also learn about common negotiation tactics, including anchoring, making concessions, and creating value.
+        </p>
+        <p>
+            <strong>5. Handling Difficult Situations</strong><br>
+            Negotiations can sometimes become challenging and contentious. This module provides techniques for handling difficult situations, such as dealing with aggressive negotiators, managing conflicts, and defusing tension. You'll also learn how to remain calm and focused under pressure.
+        </p>
+        <p>
+            <strong>6. Closing the Deal</strong><br>
+            Closing a negotiation effectively is crucial to ensuring that both parties are satisfied with the outcome. This module covers the steps to close a deal, including summarizing agreements, addressing any remaining issues, and formalizing the agreement. You'll also learn how to build long-term relationships post-negotiation.
+        </p>
+        <p>
+            <strong>7. Ethical Negotiation</strong><br>
+            Ethics play a vital role in negotiation. This module emphasizes the importance of integrity, honesty, and fairness in negotiations. You'll learn about ethical dilemmas that may arise and how to navigate them while maintaining your principles and building trust with the other party.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Negotiation course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

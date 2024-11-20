@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Thinking Course</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Critical Thinking Course</h1>
+    <p>Develop your critical thinking skills to analyze problems and make better decisions.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="criticalthinking.jpg" alt="Critical Thinking Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Critical thinking is the ability to think clearly and rationally, understanding the logical connection between ideas. It’s about being active (as opposed to reactive) in the learning process and not just passively accepting information. This course will help you develop the skills to assess, analyze, and solve complex problems effectively.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Critical Thinking</strong><br>
+            Understand the fundamentals of critical thinking and its importance.
+        </p>
+        <p>
+            <strong>2. Analyzing Arguments</strong><br>
+            Learn how to break down arguments and evaluate their validity.
+        </p>
+        <p>
+            <strong>3. Logical Reasoning</strong><br>
+            Explore the principles of logical reasoning and how to apply them.
+        </p>
+        <p>
+            <strong>4. Problem Solving Techniques</strong><br>
+            Discover various techniques to solve problems systematically.
+        </p>
+        <p>
+            <strong>5. Decision Making</strong><br>
+            Learn how to make well-informed decisions using critical thinking.
+        </p>
+        <p>
+            <strong>6. Creative Thinking</strong><br>
+            Enhance your ability to think creatively and generate innovative solutions.
+        </p>
+        <p>
+            <strong>7. Overcoming Cognitive Biases</strong><br>
+            Identify common cognitive biases and learn strategies to overcome them.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 8 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Critical Thinking course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

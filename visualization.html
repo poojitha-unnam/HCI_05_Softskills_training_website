@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .course {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course img {
+            width: 70%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            line-height: 1.6;
+        }
+        button {
+            background: #28b312;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218c2c;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Visualization Course</h1>
+    <p>Enhance your personal and professional growth through the power of visualization techniques.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="lms.html">LMS</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="course">
+        <img src="visualization.jpeg" alt="Visualization Course Image">
+        <h2>About the Course</h2>
+        <p>
+            Visualization is the practice of creating a mental image of a desired outcome or goal. This course covers essential visualization techniques and strategies to help you harness the power of your imagination and achieve your objectives.
+        </p>
+        <h2>Course Topics</h2>
+        <p>
+            <strong>1. Introduction to Visualization</strong><br>
+            Understand the importance of visualization and how it can positively impact your personal and professional life.
+        </p>
+        <p>
+            <strong>2. Techniques for Effective Visualization</strong><br>
+            Learn various visualization techniques, including guided imagery and mental rehearsal, to help you achieve your goals.
+        </p>
+        <p>
+            <strong>3. Setting Clear Goals</strong><br>
+            Discover how to set clear, specific goals that align with your values and aspirations.
+        </p>
+        <p>
+            <strong>4. Overcoming Mental Barriers</strong><br>
+            Explore strategies to overcome mental barriers and negative thoughts that may hinder your progress.
+        </p>
+        <p>
+            <strong>5. Developing a Positive Mindset</strong><br>
+            Learn techniques to cultivate a positive mindset and maintain a strong belief in your abilities.
+        </p>
+        <p>
+            <strong>6. Practical Applications of Visualization</strong><br>
+            Understand how to apply visualization techniques in various aspects of your life, including career, relationships, and health.
+        </p>
+        <p>
+            <strong>7. Creating a Visualization Routine</strong><br>
+            Develop a consistent visualization routine to support your ongoing personal and professional growth.
+        </p>
+        <h2>Course Details</h2>
+        <p>
+            Duration: 6 Weeks<br>
+            Level: Intermediate<br>
+            Price: Free
+        </p>
+        <button onclick="enroll()">Enroll Now</button>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    function enroll() {
+        alert("You have enrolled in the Visualization course. Happy learning!");
+    }
+</script>
+
+</body>
+</html>

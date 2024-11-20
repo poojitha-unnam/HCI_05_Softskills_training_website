@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #message {
+            text-align: center;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Form</h2>
+        <form id="paymentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="Positive Attitude">Positive Attitude</option>
+                <option value="Teamwork">Teamwork</option>
+                <option value="Collabration">Collabration</option>
+                <option value="Leardership">Leardership</option>
+                <option value="Self-Awareness">Self-Awareness</option>
+                <option value="Self-reflection">Self-reflection</option>
+                <option value="Meditating">Meditating</option>
+                <option value="Self-expression">Self-expression</option>
+                <option value="Self-Confidence">Self-confidence</option>
+                <option value="Strategic-thinking">Strategic thinking</option>
+                <option value="Visualization">Visualization</option>
+                <option value="Resillence">Resillence</option>
+                <option value="Focus">Focus</option>
+                <option value="Optimism">Optimism</option>
+            </select>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <div class="button-container">
+                <button type="submit">Pay Now</button><br><br>
+                <button type="button" onclick="window.location.href='payment.html'">Back</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Validate the form inputs
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const course = document.getElementById('course').value;
+            const cardNumber = document.getElementById('cardNumber').value;
+
+            if (name && email && course && cardNumber) {
+                // Redirect to payment last page
+                window.location.href = "lastpayment.html";
+            } else {
+                document.getElementById('message').textContent = 'Please fill in all fields.';
+            }
+        });
+    </script>
+</body>
+</html>
